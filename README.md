@@ -1,0 +1,1 @@
+- autorun 多任务并行脚本。运行方式为: autorun A B C D.  A为app名称,B为调用CPU核数，CD为批量工作的始末参数。
