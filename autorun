@@ -1,0 +1,16 @@
+#!/bin/bash
+
+app=$1
+cpu=$2
+first=$3
+last=$4
+
+while [[ "$first" -lt "$last" ]]
+do
+    if [[ `ps -e | grep -c "$app"` -lt "$cpu" ]]
+    then
+        ((first++))
+        echo "process: $first in $3/$last"
+        ./$app $first > /dev/null &
+    fi
+done
