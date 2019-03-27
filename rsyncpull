@@ -1,0 +1,11 @@
+#!/bin/bash
+# 若SRC位置最后没有加/,则将SRC目录拷过去，若加了斜杠，则只拷贝SRC目录下的内容，SRC目录本身不拷贝。DEST位置加不加/没有什么区别。
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/par /Volumes/AppleData/CodeProject/Work/ribll/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/map /Volumes/AppleData/CodeProject/Work/ribll/exp2/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/cali /Volumes/AppleData/CodeProject/Work/ribll/exp2/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/cut /Volumes/AppleData/CodeProject/Work/ribll/exp2/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/corr /Volumes/AppleData/CodeProject/Work/ribll/exp2/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/exp1code/map /Volumes/AppleData/CodeProject/Work/ribll/exp1/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/exp1code/cali /Volumes/AppleData/CodeProject/Work/ribll/exp1/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/exp1code/cut /Volumes/AppleData/CodeProject/Work/ribll/exp1/
+rsync -av -t -h -P --exclude '*.*~' --exclude '*.root' -e "ssh -p 2727" wuchenguang@162.105.151.29:/data/d1/RIBLL2017NaMgAlSi/yfs/exp1code/corr /Volumes/AppleData/CodeProject/Work/ribll/exp1/
