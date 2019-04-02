@@ -1,0 +1,5 @@
+#!/bin/bash
+for size in $(find . -path .git -size +$1);
+do
+  echo "" > $size
+done
