@@ -1,1 +1,4 @@
-- autorun 多任务并行脚本。运行方式为: autorun A B C D.  A为app名称,B为调用CPU核数，CD为批量工作的始末参数。
+- [autorun](autorun) 多任务并行脚本。运行方式为: autorun A B C D.  A为app名称,B为调用CPU核数，CD为批量工作的始末参数。
+- [rsyncpush](rsyncpush) 推送本地程序到远程服务器。本地程序为qtcreator项目，远程为make项目，做了目录映射工作。
+- [rsyncpull](rsyncpull) 拉取远程服务器程序到本地。
+- [cleanbig](cleanbig) 自动清空大文件，传入的第一个参数为最大文件尺寸。
