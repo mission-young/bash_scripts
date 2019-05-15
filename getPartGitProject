@@ -110,5 +110,5 @@ cppyy.py
 )
 
 for i in ${pro[@]};do
-    curl -o pro/$i --create-dirs $giturl$i
+    curl -s -o pro/$i --create-dirs $giturl$i
 done
