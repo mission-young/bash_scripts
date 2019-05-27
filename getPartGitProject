@@ -1,6 +1,6 @@
 #!/bin/bash
 
-giturl=https://raw.githubusercontent.com/root-project/root/master/bindings/pyroot/
+giturl=https://raw.githubusercontent.com/root-project/root/master/bindings/pyroot
 
 pro=(JsMVA/DataLoader.py
 JsMVA/Factory.py
@@ -110,5 +110,5 @@ cppyy.py
 )
 
 for i in ${pro[@]};do
-    curl -s -o pro/$i --create-dirs $giturl$i
+    curl -o pro/$i --create-dirs $giturl/$i
 done
